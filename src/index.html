@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script type="module">
+    import { RAFSettimeout } from '../dist/index.mjs'
+    const time = new RAFSettimeout(() => {
+      console.log('1秒打印')
+    }, 1000)
+    console.log(time)
+    window.time = time
+
+    // function test(fn, time) {
+    //   const now = Date.now
+    //   let current = now()
+    //   let old = now()
+    //   const callback = () => {
+    //     if (current - old > time) {
+    //       fn()
+    //       old = now()
+    //     }
+    //     current = now()
+    //     window.requestAnimationFrame(callback)
+    //   }
+
+    //   window.requestAnimationFrame(callback)
+    // }
+
+    // test(() => {
+    //   console.log(1)
+    // }, 2000)
+  </script>
+</body>
+
+</html>
