@@ -29,7 +29,7 @@ class RAFSetTimeoutImp {
   }
 }
 
-export function RAFSettimeout(callback: Fn, time: number) {
+export function RAFSetTimeout(callback: Fn, time: number) {
   const instance = new RAFSetTimeoutImp(callback, time)
   return instance.clear.bind(instance)
 }
