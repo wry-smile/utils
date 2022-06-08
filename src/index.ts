@@ -1,6 +1,7 @@
-export { RAFSettimeout } from './module/RAFSetTimeout'
+export { RAFSetTimeout } from './module/RAFSetTimeout'
 export { RAFSetInterval } from './module/RAFSetInterval'
 export { promisePool } from './module/promiseQueue'
+export { toEnum } from './module/enum'
 export {
   is,
   isArray,
