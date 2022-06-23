@@ -21,12 +21,12 @@ class RAFSetIntervalImp {
     this.instance = window.requestAnimationFrame(fn)
   }
 
-  public clear() {
+  public clean() {
     window.cancelAnimationFrame(this.instance)
   }
 }
 
 export function RAFSetInterval(callback: Fn, time: number) {
   const instance = new RAFSetIntervalImp(callback, time)
-  return instance.clear.bind(instance)
+  return instance.clean.bind(instance)
 }
