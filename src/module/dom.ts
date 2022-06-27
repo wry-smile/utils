@@ -3,7 +3,7 @@
  * @param {HTMLElement} ele node
  * @returns
  */
-export function getOffset(ele: HTMLElement) {
+export function getOffset(ele: HTMLElement): { top: number; left: number } {
   let el = ele
   let _x = 0
   let _y = 0
