@@ -1,10 +1,14 @@
 {
   "name": "@wry-smile/utils",
   "version": "1.0.0",
+  "private": true,
   "description": "some utile kit",
   "keywords": [],
   "license": "MIT",
   "author": "",
+  "scripts": {
+    "release": "releaseKit"
+  },
   "devDependencies": {
     "@wry-smile/eslint-config-typescript": "^0.1.8",
     "@wry-smile/release-kit": "1.0.1-beta.0",
