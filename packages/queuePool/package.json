@@ -17,6 +17,7 @@
     "dist"
   ],
   "scripts": {
+    "test": "vitest",
     "build": "tsup"
   }
 }
