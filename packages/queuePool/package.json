@@ -1,0 +1,22 @@
+{
+  "name": "@wry-smile/utils-queue-pool",
+  "version": "1.0.0",
+  "description": "promise limit queue pool",
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "type": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup"
+  }
+}

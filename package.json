@@ -7,12 +7,14 @@
   "license": "MIT",
   "author": "",
   "scripts": {
+    "build": "pnpm -r build",
     "release": "releaseKit ./packages/** && pnpm publish -r --access=public"
   },
   "devDependencies": {
     "@wry-smile/eslint-config-typescript": "^0.1.8",
     "@wry-smile/release-kit": "1.0.1-beta.0",
     "eslint": "^8.16.0",
+    "tsup": "^6.0.1",
     "typescript": "^4.7.2"
   }
 }
