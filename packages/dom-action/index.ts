@@ -37,11 +37,11 @@ export function useDrag(dragEl: HTMLElement) {
     const minTopMoveDistance = dragEl.offsetTop
     const maxTopMoveDistance = bodyHeight - domHeight - dragEl.offsetTop
 
-    let leftPx = getPxValue(getComputedStyle(dragEl).left)
-    let topPx = getPxValue(getComputedStyle(dragEl).top)
+    const leftPx = getPxValue(getComputedStyle(dragEl).left)
+    const topPx = getPxValue(getComputedStyle(dragEl).top)
 
-    leftPx += leftPx
-    topPx += topPx
+    const styleLeftPx = +leftPx
+    const styleTopPx = +topPx
     document.onmousemove = (event) => {
       let leftMoveDistance = event.clientX - domCX
       let topMoveDistance = event.clientY - domCY
@@ -59,7 +59,7 @@ export function useDrag(dragEl: HTMLElement) {
       else if (topMoveDistance > maxTopMoveDistance)
         topMoveDistance = maxTopMoveDistance
 
-      dragEl.style.cssText += `;left: ${leftPx + leftMoveDistance}px; top: ${topPx + topMoveDistance}px;`
+      dragEl.style.cssText += `;left: ${styleLeftPx + leftMoveDistance}px; top: ${styleTopPx + topMoveDistance}px;`
     }
 
     document.onmouseup = () => {
