@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest'
-import { QueuePool } from '../dist/index'
+import { queuePool } from '../dist/index'
 
 describe('queuePool', () => {
   test('excute order', async () => {
@@ -11,7 +11,7 @@ describe('queuePool', () => {
       })
     }
 
-    const result = await QueuePool([
+    const result = await queuePool([
       () => wait(1000),
       () => wait(1000),
       () => wait(1000),
