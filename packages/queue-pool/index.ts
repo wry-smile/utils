@@ -2,8 +2,8 @@ export type QueueTask = ((...args: any) => Promise<any>)[]
 
 /**
  * @description promise queue pool
- * @param {QueueTask} [[]] queueTask - queue pool
- * @param {number} [6] limit - limit concurrent number
+ * @param {QueueTask}  queueTask - queue pool
+ * @param {number}  limit - limit concurrent number
  */
 export function queuePool(queueTask: QueueTask = [], limit = 6) {
   const length = queueTask.length
