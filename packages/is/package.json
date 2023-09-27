@@ -2,7 +2,9 @@
   "name": "@wry-smile/utils-is",
   "version": "1.0.0",
   "description": "type judage kit",
-  "keywords": ["type judge"],
+  "keywords": [
+    "type judge"
+  ],
   "license": "MIT",
   "author": "",
   "main": "./dist/index.mjs",
@@ -13,10 +15,13 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "file": ["./dist"],
+  "file": [
+    "./dist"
+  ],
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch"
+    "dev": "tsup --watch",
+    "release": "releaseKit && pnpm publish --access=public"
   },
   "dependencies": {
     "tsup": "^6.0.1"
