@@ -1,0 +1,25 @@
+{
+  "name": "@wry-smile/get-image-primary-color",
+  "version": "1.0.0",
+  "description": "type judage kit",
+  "keywords": ["type judge"],
+  "license": "MIT",
+  "author": "",
+  "main": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "file": ["./dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+
+  },
+  "dependencies": {
+    "tsup": "^6.0.1"
+  }
+}

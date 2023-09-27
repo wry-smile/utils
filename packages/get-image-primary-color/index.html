@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background: url(https://img1.baidu.com/it/u=195676648,2282096225&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500);
+        background-size: 100% 100%;
+        overflow: hidden;
+      }
+  
+      .card {
+        margin: 100px auto;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        border: 1px solid #000;
+        color: white;
+        backdrop-filter: blur(10px);
+        background-color: rgba(0,0,0,.3);
+      }
+  
+      .text {
+        position: relative;
+        z-index: 1;
+      }
+  
+      .card::before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        filter: blur(10px);
+        background: url(https://img1.baidu.com/it/u=195676648,2282096225&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500) no-repeat center;
+        background-attachment: fixed;
+        background-size: cover; 
+        margin: -20px;
+      }
+  
+      .card::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    </style>
+</head>
+<body>
+  <div class="card">
+		<div class="text"></div>
+	</div>
+    <script>
+    </script>
+</body>
+</html>

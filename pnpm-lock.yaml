@@ -18,6 +18,12 @@ importers:
       typescript: 4.7.2
       vitest: 0.19.0
 
+  packages/composeKeyboard:
+    specifiers:
+      tsup: ^6.0.1
+    devDependencies:
+      tsup: 6.0.1
+
   packages/is:
     specifiers:
       tsup: ^6.0.1
@@ -2686,7 +2692,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - ts-node
-    dev: false
 
   /tsup/6.0.1_typescript@4.7.2:
     resolution: {integrity: sha512-2Pl1YkEEvzfg4aYgwUILaHV0wwZQKO7mNHMQChyzdCNlQqf11eug7gWk86XCb3CvRofCXBX87x73BTGjyS3cOQ==}
