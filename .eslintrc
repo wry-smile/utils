@@ -1,6 +1,0 @@
-{
-  "extends": [
-    "@wry-smile/eslint-config-typescript"
-  ]
-}
- 

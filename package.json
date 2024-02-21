@@ -1,21 +1,20 @@
 {
   "name": "@wry-smile/utils",
   "version": "1.0.0",
-  "private": true,
   "description": "some utile kit",
   "keywords": [],
   "license": "MIT",
   "author": "",
   "scripts": {
-    "build": "pnpm -r build",
-    "release": "releaseKit ./packages/** && pnpm publish -r --access=public"
+    "build": "tsup",
+    "release": "pnpm build && releaseKit && pnpm publish --access=public"
   },
   "devDependencies": {
-    "@wry-smile/eslint-config-typescript": "^0.1.8",
+    "@antfu/eslint-config": "^2.6.4",
     "@wry-smile/release-kit": "1.0.1-beta.0",
     "eslint": "^8.16.0",
-    "tsup": "^6.0.1",
-    "typescript": "^4.7.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3",
     "vitest": "^0.19.0"
   }
 }
