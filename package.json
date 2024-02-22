@@ -1,6 +1,6 @@
 {
   "name": "@wry-smile/utils",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "some utile kit",
   "keywords": [],
   "license": "MIT",
@@ -9,6 +9,17 @@
     "build": "tsup",
     "release": "pnpm build && releaseKit && pnpm publish --access=public"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.4",
     "@wry-smile/release-kit": "1.0.1-beta.0",
